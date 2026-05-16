@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     cmake \
     libdrogon-dev \
+    libjsoncpp-dev \
     libpq-dev \
     pkg-config \
     ca-certificates \
@@ -23,6 +24,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libdrogon-dev \
+    libjsoncpp25 \
     libpq5 \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
